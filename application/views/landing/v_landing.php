@@ -58,7 +58,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
           <div class="col-lg-12">
             <nav class="navbar navbar-expand-lg">
               <a class="navbar-brand" href="index.html">
-                <img src="assets/images/logo/logo.svg" alt="Logo" />
+                <img src="<?php echo base_url (); ?>template/landing/assets/images/logo/logo.svg" alt="Logo" />
               </a>
               <button class="navbar-toggler">
                 <span class="toggler-icon"> </span>
@@ -126,7 +126,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
               </div>
 
               <div class="navbar-btn d-none d-sm-inline-block">
-                <a href="login.html" class="ud-main-btn ud-login-btn">
+                <a href="login" class="ud-main-btn ud-login-btn">
                   Sign In
                 </a>
                 <a class="ud-main-btn ud-white-btn" href="javascript:void(0)">
@@ -170,17 +170,17 @@ defined('BASEPATH') OR exit('No direct script access allowed');
               class="ud-hero-brands-wrapper wow fadeInUp"
               data-wow-delay=".3s"
             >
-              <img src="assets/images/hero/brand.svg" alt="brand" />
+              <img src="<?php echo base_url (); ?>template/landing/assets/images/hero/brand.svg" alt="brand" />
             </div>
             <div class="ud-hero-image wow fadeInUp" data-wow-delay=".25s">
-              <img src="assets/images/hero/hero-image.svg" alt="hero-image" />
+              <img src="<?php echo base_url (); ?>template/landing/assets/images/hero/hero-image.svg" alt="hero-image" />
               <img
-                src="assets/images/hero/dotted-shape.svg"
+                src="<?php echo base_url (); ?>template/landing/assets/images/hero/dotted-shape.svg"
                 alt="shape"
                 class="shape shape-1"
               />
               <img
-                src="assets/images/hero/dotted-shape.svg"
+                src="<?php echo base_url (); ?>template/landing/assets/images/hero/dotted-shape.svg"
                 alt="shape"
                 class="shape shape-2"
               />
@@ -300,7 +300,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
             </div>
           </div>
           <div class="ud-about-image">
-            <img src="assets/images/about/about-image.svg" alt="about-image" />
+            <img src="<?php echo base_url (); ?>template/landing/assets/images/about/about-image.svg" alt="about-image" />
           </div>
         </div>
       </div>
@@ -411,7 +411,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
     <!-- ====== FAQ Start ====== -->
     <section id="faq" class="ud-faq">
       <div class="shape">
-        <img src="assets/images/faq/shape.svg" alt="shape" />
+        <img src="<?php echo base_url (); ?>template/landing/assets/images/faq/shape.svg" alt="shape" />
       </div>
       <div class="container">
         <div class="row">
@@ -613,7 +613,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
               <div class="ud-testimonial-info">
                 <div class="ud-testimonial-image">
                   <img
-                    src="assets/images/testimonials/author-01.png"
+                    src="<?php echo base_url (); ?>template/landing/assets/images/testimonials/author-01.png"
                     alt="author"
                   />
                 </div>
@@ -645,7 +645,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
               <div class="ud-testimonial-info">
                 <div class="ud-testimonial-image">
                   <img
-                    src="assets/images/testimonials/author-02.png"
+                    src="<?php echo base_url (); ?>template/landing/assets/images/testimonials/author-02.png"
                     alt="author"
                   />
                 </div>
@@ -677,7 +677,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
               <div class="ud-testimonial-info">
                 <div class="ud-testimonial-image">
                   <img
-                    src="assets/images/testimonials/author-03.png"
+                    src="<?php echo base_url (); ?>template/landing/assets/images/testimonials/author-03.png"
                     alt="author"
                   />
                 </div>
@@ -697,20 +697,20 @@ defined('BASEPATH') OR exit('No direct script access allowed');
               </div>
               <div class="ud-brands-logo">
                 <div class="ud-single-logo">
-                  <img src="assets/images/brands/ayroui.svg" alt="ayroui" />
+                  <img src="<?php echo base_url (); ?>template/landing/assets/images/brands/ayroui.svg" alt="ayroui" />
                 </div>
                 <div class="ud-single-logo">
-                  <img src="assets/images/brands/uideck.svg" alt="uideck" />
+                  <img src="<?php echo base_url (); ?>template/landing/assets/images/brands/uideck.svg" alt="uideck" />
                 </div>
                 <div class="ud-single-logo">
                   <img
-                    src="assets/images/brands/graygrids.svg"
+                    src="<?php echo base_url (); ?>template/landing/assets/images/brands/graygrids.svg"
                     alt="graygrids"
                   />
                 </div>
                 <div class="ud-single-logo">
                   <img
-                    src="assets/images/brands/lineicons.svg"
+                    src="<?php echo base_url (); ?>template/landing/assets/images/brands/lineicons.svg"
                     alt="lineicons"
                   />
                 </div>
@@ -749,16 +749,16 @@ defined('BASEPATH') OR exit('No direct script access allowed');
             <div class="ud-single-team wow fadeInUp" data-wow-delay=".1s">
               <div class="ud-team-image-wrapper">
                 <div class="ud-team-image">
-                  <img src="assets/images/team/team-01.png" alt="team" />
+                  <img src="<?php echo base_url (); ?>template/landing/assets/images/team/team-01.png" alt="team" />
                 </div>
 
                 <img
-                  src="assets/images/team/dotted-shape.svg"
+                  src="<?php echo base_url (); ?>template/landing/assets/images/team/dotted-shape.svg"
                   alt="shape"
                   class="shape shape-1"
                 />
                 <img
-                  src="assets/images/team/shape-2.svg"
+                  src="<?php echo base_url (); ?>template/landing/assets/images/team/shape-2.svg"
                   alt="shape"
                   class="shape shape-2"
                 />
@@ -790,16 +790,16 @@ defined('BASEPATH') OR exit('No direct script access allowed');
             <div class="ud-single-team wow fadeInUp" data-wow-delay=".15s">
               <div class="ud-team-image-wrapper">
                 <div class="ud-team-image">
-                  <img src="assets/images/team/team-02.png" alt="team" />
+                  <img src="<?php echo base_url (); ?>template/landing/assets/images/team/team-02.png" alt="team" />
                 </div>
 
                 <img
-                  src="assets/images/team/dotted-shape.svg"
+                  src="<?php echo base_url (); ?>template/landing/assets/images/team/dotted-shape.svg"
                   alt="shape"
                   class="shape shape-1"
                 />
                 <img
-                  src="assets/images/team/shape-2.svg"
+                  src="<?php echo base_url (); ?>template/landing/assets/images/team/shape-2.svg"
                   alt="shape"
                   class="shape shape-2"
                 />
@@ -831,16 +831,16 @@ defined('BASEPATH') OR exit('No direct script access allowed');
             <div class="ud-single-team wow fadeInUp" data-wow-delay=".2s">
               <div class="ud-team-image-wrapper">
                 <div class="ud-team-image">
-                  <img src="assets/images/team/team-03.png" alt="team" />
+                  <img src="<?php echo base_url (); ?>template/landing/assets/images/team/team-03.png" alt="team" />
                 </div>
 
                 <img
-                  src="assets/images/team/dotted-shape.svg"
+                  src="<?php echo base_url (); ?>template/landing/assets/images/team/dotted-shape.svg"
                   alt="shape"
                   class="shape shape-1"
                 />
                 <img
-                  src="assets/images/team/shape-2.svg"
+                  src="<?php echo base_url (); ?>template/landing/assets/images/team/shape-2.svg"
                   alt="shape"
                   class="shape shape-2"
                 />
@@ -872,16 +872,16 @@ defined('BASEPATH') OR exit('No direct script access allowed');
             <div class="ud-single-team wow fadeInUp" data-wow-delay=".25s">
               <div class="ud-team-image-wrapper">
                 <div class="ud-team-image">
-                  <img src="assets/images/team/team-04.png" alt="team" />
+                  <img src="<?php echo base_url (); ?>template/landing/assets/images/team/team-04.png" alt="team" />
                 </div>
 
                 <img
-                  src="assets/images/team/dotted-shape.svg"
+                  src="<?php echo base_url (); ?>template/landing/assets/images/team/dotted-shape.svg"
                   alt="shape"
                   class="shape shape-1"
                 />
                 <img
-                  src="assets/images/team/shape-2.svg"
+                  src="<?php echo base_url (); ?>template/landing/assets/images/team/shape-2.svg"
                   alt="shape"
                   class="shape shape-2"
                 />
@@ -1005,13 +1005,13 @@ defined('BASEPATH') OR exit('No direct script access allowed');
     <!-- ====== Footer Start ====== -->
     <footer class="ud-footer wow fadeInUp" data-wow-delay=".15s">
       <div class="shape shape-1">
-        <img src="assets/images/footer/shape-1.svg" alt="shape" />
+        <img src="<?php echo base_url (); ?>template/landing/assets/images/footer/shape-1.svg" alt="shape" />
       </div>
       <div class="shape shape-2">
-        <img src="assets/images/footer/shape-2.svg" alt="shape" />
+        <img src="<?php echo base_url (); ?>template/landing/assets/images/footer/shape-2.svg" alt="shape" />
       </div>
       <div class="shape shape-3">
-        <img src="assets/images/footer/shape-3.svg" alt="shape" />
+        <img src="<?php echo base_url (); ?>template/landing/assets/images/footer/shape-3.svg" alt="shape" />
       </div>
       <div class="ud-footer-widgets">
         <div class="container">
@@ -1019,7 +1019,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
             <div class="col-xl-3 col-lg-4 col-md-6">
               <div class="ud-widget">
                 <a href="index.html" class="ud-footer-logo">
-                  <img src="assets/images/logo/logo.svg" alt="logo" />
+                  <img src="<?php echo base_url (); ?>template/landing/assets/images/logo/logo.svg" alt="logo" />
                 </a>
                 <p class="ud-widget-desc">
                   We create digital experiences for brands and companies by
@@ -1138,7 +1138,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                       target="_blank"
                     >
                       <img
-                        src="assets/images/footer/brands/ayroui.svg"
+                        src="<?php echo base_url (); ?>template/landing/assets/images/footer/brands/ayroui.svg"
                         alt="ayroui"
                       />
                     </a>
@@ -1150,7 +1150,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                       target="_blank"
                     >
                       <img
-                        src="assets/images/footer/brands/ecommerce-html.svg"
+                        src="<?php echo base_url (); ?>template/landing/assets/images/footer/brands/ecommerce-html.svg"
                         alt="ecommerce-html"
                       />
                     </a>
@@ -1162,7 +1162,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                       target="_blank"
                     >
                       <img
-                        src="assets/images/footer/brands/graygrids.svg"
+                        src="<?php echo base_url (); ?>template/landing/assets/images/footer/brands/graygrids.svg"
                         alt="graygrids"
                       />
                     </a>
@@ -1174,7 +1174,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                       target="_blank"
                     >
                       <img
-                        src="assets/images/footer/brands/lineicons.svg"
+                        src="<?php echo base_url (); ?>template/landing/assets/images/footer/brands/lineicons.svg"
                         alt="lineicons"
                       />
                     </a>
@@ -1186,7 +1186,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                       target="_blank"
                     >
                       <img
-                        src="assets/images/footer/brands/uideck.svg"
+                        src="<?php echo base_url (); ?>template/landing/assets/images/footer/brands/uideck.svg"
                         alt="uideck"
                       />
                     </a>
@@ -1198,7 +1198,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                       target="_blank"
                     >
                       <img
-                        src="assets/images/footer/brands/tailwindtemplates.svg"
+                        src="<?php echo base_url (); ?>template/landing/assets/images/footer/brands/tailwindtemplates.svg"
                         alt="tailwindtemplates"
                       />
                     </a>
