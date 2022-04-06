@@ -65,13 +65,6 @@
                   </a>
                 </li>
               </ul>
-              <li class="nav-item d-flex align-items-center">
-                <a class="btn btn-round btn-sm mb-0 btn-outline-primary me-2" target="_blank" href="https://www.creative-tim.com/builder/soft-ui?ref=navbar-dashboard">Online Builder</a>
-              </li>
-              <ul class="navbar-nav d-lg-block d-none">
-                <li class="nav-item">
-                  <a href="https://www.creative-tim.com/product/soft-ui-dashboard" class="btn btn-sm btn-round mb-0 me-1 bg-gradient-dark">Free download</a>
-                </li>
               </ul>
             </div>
           </div>
@@ -106,7 +99,7 @@
                       <label class="form-check-label" for="rememberMe">Remember me</label>
                     </div>
                     <div class="text-center">
-                      <button type="button" class="btn bg-gradient-info w-100 mt-4 mb-0"><a href="<?php echo base_url ('Home'); ?>"> Sign in</a></button>
+                      <button type="button" class="btn bg-gradient-info w-100 mt-4 mb-0">Sign in</a></button>
                     </div>
                   </form>
                 </div>
