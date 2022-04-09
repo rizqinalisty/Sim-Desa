@@ -9,7 +9,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
   <link rel="apple-touch-icon" sizes="76x76" href="<?php echo base_url();?> template/admin/assets/img/apple-icon.png">
   <link rel="icon" type="image/png" href="<?php echo base_url();?> template/admin/assets/img/favicon.png">
   <title>
-    Sistem Informasi Desa | Sim Desa
+    Soft UI Dashboard by Creative Tim
   </title>
   <!--     Fonts and icons     -->
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet" />

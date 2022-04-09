@@ -32,7 +32,7 @@ parent::__construct();
 			$this->form_validation->set_rules('password','Password','required');
 	if($this->form_validation->run() != false){
 			$where = array(
-			'email' => $email,
+			'username' => $email,
 			'password' => md5($password)
 			);
 			$cek = $this->m_data->cek_login('tbl_user',$where)->num_rows();
