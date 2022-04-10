@@ -7,7 +7,7 @@
   <link rel="apple-touch-icon" sizes="76x76" href="<?php echo base_url(); ?>template/admin/assets/img/apple-icon.png">
   <link rel="icon" type="image/png" href="<?php echo base_url(); ?>template/admin/assets/img/favicon.png">
   <title>
-    Soft UI Dashboard by Creative Tim
+    Login Admin Sim Desa
   </title>
   <!--     Fonts and icons     -->
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet" />
@@ -29,7 +29,7 @@
         <nav class="navbar navbar-expand-lg blur blur-rounded top-0 z-index-3 shadow position-absolute my-3 py-2 start-0 end-0 mx-4">
           <div class="container-fluid pe-0">
             <a class="navbar-brand font-weight-bolder ms-lg-0 ms-3 " href="<?php echo base_url (); ?>template/admin/pages/dashboard.html">
-              Soft UI Dashboard
+              Login Admin
             </a>
             <button class="navbar-toggler shadow-none ms-2" type="button" data-bs-toggle="collapse" data-bs-target="#navigation" aria-controls="navigation" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon mt-2">
