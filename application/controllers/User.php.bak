@@ -28,7 +28,7 @@ class User extends CI_Controller {
 		$this->load->view('admin/v_user',$data);
 		$this->load->view('admin/v_footer');
 	}
-	function User_Edit ($username){
+	function anggota_edit($username){
 		$where = array('username' => $username);
 		// mengambil data dari database sesuai id
 		$data['User'] = $this->m_data->edit_data($where,'User')->result();

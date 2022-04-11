@@ -167,14 +167,9 @@
                         <span class="text-secondary text-xs font-weight-bold"><?php echo $b->last_logout;?></span>
                       </td>
                       <td class="align-middle">
-                        <a href="javascript:;" class="text-secondary font-weight-bold text-xs" data-toggle="tooltip" data-original-title="Edit user">
-                          Edit
-                        </a>|
-						<a href="javascript:;" class="text-secondary font-weight-bold text-xs" data-toggle="tooltip" data-original-title="Edit user">
-                          Hapus
-                        </a>
+                        <a href=""http://localhost/sim-desa/admin/v_user_edit/" class="btn btn-warning  d-none d-md-block pull-right ms-3 hidden-xs hidden-sm waves-effect waves-light text-white">Edit</a>
+						<a href="" class="btn btn-danger  d-none d-md-block pull-right ms-3 hidden-xs hidden-sm waves-effect waves-light text-white">Hapus</a>
                       </td>
-                      
                     </tr>
 					<?php
 						}
