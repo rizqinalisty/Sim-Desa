@@ -132,6 +132,7 @@
                       <th class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7 ps-2">Username</th>
                       <th class="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">Level</th>
                       <th class="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">Last Login</th>
+					  <th class="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">Last Logout</th>
                       <th class="text-secondary opacity-7"></th>
                     </tr>
                   </thead>
@@ -152,15 +153,18 @@
 						   ?>
                           </div>
                         </div>
+					</td>
+						 <td>  
+                        <p class="text-xs text-secondary mb-0"><?php echo $b->username;?></p>
                       </td>
-						
-                        <p class="text-xs text-secondary mb-0"><?php echo $b->level;?></p>
-                      </td>
-                      <td class="align-middle text-center text-sm">
-                        <span class="badge badge-sm bg-gradient-success">Online</span>
+                      <td class="align-middle text-center">
+                        <span class="text-secondary text-xs font-weight-bold"><?php echo $b->level;?></span>
                       </td>
                       <td class="align-middle text-center">
                         <span class="text-secondary text-xs font-weight-bold"><?php echo $b->last_login;?></span>
+                      </td>
+					  <td class="align-middle text-center">
+                        <span class="text-secondary text-xs font-weight-bold"><?php echo $b->last_logout;?></span>
                       </td>
                       <td class="align-middle">
                         <a href="javascript:;" class="text-secondary font-weight-bold text-xs" data-toggle="tooltip" data-original-title="Edit user">
@@ -170,6 +174,7 @@
                           Hapus
                         </a>
                       </td>
+                      
                     </tr>
 					<?php
 						}
