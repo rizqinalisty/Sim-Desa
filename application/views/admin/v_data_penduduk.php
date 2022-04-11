@@ -151,8 +151,8 @@
 					  <td>  
                         <p class="text-xs text-secondary mb-0"><?php echo $b->nama;?></p>
                       </td>
-                      <td class="align-middle text-center text-sm">
-                        <span class="badge badge-sm bg-gradient-success">ttl<span>
+                      <td class="align-middle text-center">
+                        <span class="text-secondary text-xs font-weight-bold"><?php echo $b->ttl;?></span>
                       </td>
                       <td class="align-middle text-center">
                         <span class="text-secondary text-xs font-weight-bold"><?php echo $b->jenis_kelamin;?></span>

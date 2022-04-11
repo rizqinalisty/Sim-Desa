@@ -153,8 +153,7 @@
                           </div>
                         </div>
                       </td>
-                      <td>
-                        <p class="text-xs font-weight-bold mb-0"><?php echo $b->username;?></p>
+						
                         <p class="text-xs text-secondary mb-0"><?php echo $b->level;?></p>
                       </td>
                       <td class="align-middle text-center text-sm">
