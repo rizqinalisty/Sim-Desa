@@ -28,28 +28,28 @@ class User extends CI_Controller {
 		$this->load->view('admin/v_user',$data);
 		$this->load->view('admin/v_footer');
 	}
-	function User_Edit ($username){
-		$where = array('username' => $username);
-		// mengambil data dari database sesuai id
-		$data['User'] = $this->m_data->edit_data($where,'User')->result();
-		$this->load->view('user/v_header');
-		$this->load->view('admin/v_sidebar');
-		$this->load->view('user/v_anggota_edit',$data);
-		$this->load->view('user/v_footer');
-		}
-	function anggota_update(){
-		$username = $this->input->post('username');
+	//menyimpan user baru
+	function user_tambah() {
+		$email = $this->input->post('email');
+		$password = $this->input->post('password');
 		$level = $this->input->post('level');
-		$where = array(
-		'username' => $username
+ 
+		$data=array(
+		'username'=>$email,
+		'password'=>md5($password),
+		'level'=>$level
 		);
-		$data = array(
-		'username' => $username,
-		'level' => $level,
-		);
-		// update data ke database
-		$this->m_data->update_data($where,$data,'User');
-		// mengalihkan halaman ke halaman data anggota
-		redirect(base_url().'admin/User');
-		}
+
+		
+	//insert data ke database
+	$this->m_data->insert_data($data,'tbl_user');
+	//mengalihkan halaman ke halaman data user
+	redirect(base_url().'user');
+	}
+	function tambah_user(){
+		$this->load->view('admin/v_header');
+		$this->load->view('admin/v_sidebar');
+		$this->load->view('admin/v_user_tambah');
+		$this->load->view('admin/v_footer');
+	}
 }

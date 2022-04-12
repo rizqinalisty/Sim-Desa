@@ -118,70 +118,29 @@
     </nav>
  <div class="container-fluid py-4">
       <div class="row">
-        <div class="col-12">
-          <div class="card mb-4">
-            <div class="card-header pb-0">
-			
-              <h6>Table User</h6>
-            </div>
-            <div class="card-body px-0 pt-0 pb-2">
-			
-              <div class="table-responsive p-0">
-			  <a href="<?php echo base_url().'user/user_tambah' ?>" class='btn btn-sm 
-btn-success pull-right'><i class="fa fa-plus"></i> Petugas Baru</a>
-                <table class="table align-items-center mb-0">
-                  <thead>
-                    <tr>
-                      <th class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">No</th>
-                      <th class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7 ps-2">Username</th>
-                      <th class="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">Level</th>
-                      <th class="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">Last Login</th>
-					  <th class="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">Last Logout</th>
-                      <th class="text-secondary opacity-7"></th>
-                    </tr>
-                  </thead>
-                  <tbody>
-				  <?php 
-						$no = 1;
-						foreach($user as $b){
-					?>
-                    <tr>
-                      <td>
-                        <div class="d-flex px-2 py-1">
-                          <div>
-                            <img src="<?php echo base_url();?>template/admin/assets/img/<?php echo $b->profile;?>"class="avatar avatar-sm me-3" alt="user1">
-                          </div>
-                          <div class="d-flex flex-column justify-content-center">
-                           <?php
-						   echo $no++;
-						   ?>
-                          </div>
-                        </div>
-					</td>
-						 <td>  
-                        <p class="text-xs text-secondary mb-0"><?php echo $b->username;?></p>
-                      </td>
-                      <td class="align-middle text-center">
-                        <span class="text-secondary text-xs font-weight-bold"><?php echo $b->level;?></span>
-                      </td>
-                      <td class="align-middle text-center">
-                        <span class="text-secondary text-xs font-weight-bold"><?php echo $b->last_login;?></span>
-                      </td>
-					  <td class="align-middle text-center">
-                        <span class="text-secondary text-xs font-weight-bold"><?php echo $b->last_logout;?></span>
-                      </td>
-                      <td class="align-middle">
-                        <a href=""http://localhost/sim-desa/admin/v_user_edit/" class="btn btn-warning  d-none d-md-block pull-right ms-3 hidden-xs hidden-sm waves-effect waves-light text-white">Edit</a>
-						<a href="" class="btn btn-danger  d-none d-md-block pull-right ms-3 hidden-xs hidden-sm waves-effect waves-light text-white">Hapus</a>
-                      </td>
-                    </tr>
-					<?php
-						}
-					?>
-                  </tbody>
-                </table>
-              </div>
-            </div>
-          </div>
-        </div>
+       <form method="post" action="<?php echo base_url('user/user_tambah');?>"> 
+  <div class="form-group">
+    <label for="exampleInputEmail1">Email address</label>
+    <input type="email" name="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+    <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+  </div>
+  <div class="form-group">
+    <label for="exampleInputPassword1">Password</label>
+    <input type="password" name="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+  </div>
+  <div class="form-group">
+  <label for="exampleFormControlSelect1">Level</label>
+  <select class="form-control" name="level" id="exampleFormControlSelection1">
+  <option>Admin</option>
+   <option>Petugas</option>
+    <option>Pengguna</option>
+  </select>
+  </div>
+  <div class="form-check">
+    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+    <label class="form-check-label" for="exampleCheck1">Check me out</label>
+  </div>
+  <button type="submit" class="btn btn-primary">Submit</button>
+</form>
+	</div>
       </div>

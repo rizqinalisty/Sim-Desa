@@ -121,9 +121,12 @@
         <div class="col-12">
           <div class="card mb-4">
             <div class="card-header pb-0">
+			<a href="<?php echo base_url().'user/tambah_user' ?>" class='btn btn-sm 
+btn-success pull-right'><i class="fa fa-plus"></i> Petugas Baru</a>
               <h6>Table User</h6>
             </div>
             <div class="card-body px-0 pt-0 pb-2">
+			
               <div class="table-responsive p-0">
                 <table class="table align-items-center mb-0">
                   <thead>
