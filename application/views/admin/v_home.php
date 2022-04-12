@@ -23,7 +23,7 @@
             <li class="nav-item d-flex align-items-center">
               <a href="javascript:;" class="nav-link text-body font-weight-bold px-0">
                 <i class="fa fa-user me-sm-1"></i>
-                <span class="d-sm-inline d-none">Sign In</span>
+				<a href="<?php echo base_url('user/logout') ?>" class="btn btn-online-light ml0"><i class="fa fa-power-on"></i>Sign Out</a>   
               </a>
             </li>
             <li class="nav-item d-xl-none ps-3 d-flex align-items-center">

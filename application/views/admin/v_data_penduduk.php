@@ -118,9 +118,9 @@
     </nav>
  <div class="container-fluid py-4">
       <div class="row">
+	  <a href="<?php echo base_url().'data_penduduk/penduduk_tambah' ?>" class='btn btn-sm btnsuccess pull-right'><i class="fa fa-plus"></i> Petugas Baru</a> 
         <div class="col-12">
-          <div class="card mb-4">
-            
+          <div class="card mb-4">   
             <div class="card-body px-0 pt-0 pb-2">
               <div class="table-responsive p-0">
                 <table class="table align-items-center mb-0">
@@ -161,8 +161,8 @@
                         <span class="text-secondary text-xs font-weight-bold"><?php echo $b->alamat;?></span>
                       </td>
                       <td class="align-middle">
-                        <a href="" class="btn btn-warning  d-none d-md-block pull-right ms-3 hidden-xs hidden-sm waves-effect waves-light text-white">Edit</a>
-						<a href="" class="btn btn-danger  d-none d-md-block pull-right ms-3 hidden-xs hidden-sm waves-effect waves-light text-white">Hapus</a>
+                       <a href="<?php echo base_url('user/user_edit/'.$b->nik);?>" class="btn btn-sm btn-success"><i class="fa fa-wrench"></i> Edit</a>  
+						<a href="<?php echo base_url('user/user_hapus/'.$b->nik); ?>" class="btn btn-sm btn-danger"><i class="fa fa-trash"></i> Hapus</a> 
                       </td>
                     </tr>
 					<?php
