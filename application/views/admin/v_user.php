@@ -170,8 +170,8 @@ btn-success pull-right'><i class="fa fa-plus"></i> Petugas Baru</a>
                         <span class="text-secondary text-xs font-weight-bold"><?php echo $b->last_logout;?></span>
                       </td>
                       <td class="align-middle">
-                        <a href=""http://localhost/sim-desa/admin/v_user_edit/" class="btn btn-warning  d-none d-md-block pull-right ms-3 hidden-xs hidden-sm waves-effect waves-light text-white">Edit</a>
-						<a href="" class="btn btn-danger  d-none d-md-block pull-right ms-3 hidden-xs hidden-sm waves-effect waves-light text-white">Hapus</a>
+                        <a href="<?php echo base_url('user/user_edit/'.$b->id_user);?>" class="btn btn-sm btn-success"><i class="fa fa-wrench"></i> Edit</a>  
+						<a href="<?php echo base_url('user/user_hapus/'.$b->id_user); ?>" class="btn btn-sm btn-danger"><i class="fa fa-trash"></i> Hapus</a> 
                       </td>
                     </tr>
 					<?php
