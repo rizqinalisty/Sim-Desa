@@ -78,6 +78,9 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                     <a class="ud-menu-scroll" href="#about">Jenis Layanan</a>
                   </li>
                   <li class="nav-item">
+                    <a class="ud-menu-scroll" href="#pricing">Pengajuan</a>
+                  </li>
+                  <li class="nav-item">
                     <a class="ud-menu-scroll" href="#contact">Laporan Pengaduan</a>
                   </li>
                   <li class="nav-item">
@@ -89,6 +92,11 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                       <li class="ud-submenu-item">
                         <a href="about.html" class="ud-submenu-link">
                           Jenis Layanan
+                        </a>
+                      </li>
+                      <li class="ud-submenu-item">
+                        <a href="pricing.html" class="ud-submenu-link">
+                          Pengajuan
                         </a>
                       </li>
                       <li class="ud-submenu-item">

@@ -22,4 +22,25 @@ class Landing extends CI_Controller {
 	{
 		$this->load->view('landing/v_landing');
 	}
+	public function tampil_ktp()
+	{
+		$this->load->view('landing/v_ktp');
+	}
+	public function tampil_kk()
+	{
+		$this->load->view('landing/v_kk');
+	}
+	public function tampil_akta()
+	{
+		$this->load->view('landing/v_akta');
+	}
+	public function tampil_surat_pindah()
+	{
+		$this->load->view('landing/v_surat_pindah');
+	}
+	public function tampil_tambah_pengajuan()
+	{
+		$this->load->view('landing/v_landing');
+	}
+	
 }

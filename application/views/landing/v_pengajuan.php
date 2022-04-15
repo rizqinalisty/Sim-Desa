@@ -118,25 +118,60 @@
     </nav>
  <div class="container-fluid py-4">
       <div class="row">
-       <form method="post" action="<?php echo base_url('data_penduduk/tambah_tambah');?>"> 
-  <div class="form-group">
-    <label for="exampleInputText1">Nama</label>
-    <input type="text" name="nama" class="form-control" id="exampleInputText1" aria-describedby="emailHelp" placeholder="Enter Name" >
-    <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
-  </div>
-  <div class="form-group">
-    <label for="exampleInputPassword1">TTL</label>
-    <input type="text" name="ttl" class="form-control" id="exampleInputText1">
-  </div>
-  <div class="form-group">
-  <label for="exampleFormControlSelect1">Alamat</label>
-  <input type="text" name="alamat" id="exampleInputText1">
-  </div>
-  <div class="form-check">
-    <input type="checkbox" class="form-check-input" id="exampleCheck1">
-    <label class="form-check-label" for="exampleCheck1">Check me out</label>
-  </div>
-  <button type="submit" class="btn btn-primary">Submit</button>
-</form>
-	</div>
+	  <a href="<?php echo base_url().'data_penduduk/penduduk_tambah' ?>" class='btn btn-sm btnsuccess pull-right'><i class="fa fa-plus"></i> Petugas Baru</a> 
+        <div class="col-12">
+          <div class="card mb-4">   
+            <div class="card-body px-0 pt-0 pb-2">
+              <div class="table-responsive p-0">
+                <table class="table align-items-center mb-0">
+                  <thead>
+                    <tr>
+                      <th class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">NIK</th>
+                      <th class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7 ps-2">Nama</th>
+                      <th class="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">TTL</th>
+                      <th class="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">Jenis Kelamin</th>
+					  <th class="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">Alamat</th>
+                      <th class="text-secondary opacity-7"></th>
+                    </tr>
+                  </thead>
+                  <tbody>
+				  <?php 
+						
+						foreach($penduduk as $b){
+					?>
+                    <tr>
+                      <td>
+                        <div class="d-flex px-2 py-1">
+                          <div class="d-flex flex-column justify-content-center">
+                           
+							<p class="text-xs font-weight-bold mb-0"><?php echo $b->nik;?></p>
+                          </div>
+                        </div>
+                      </td>
+					  <td>  
+                        <p class="text-xs text-secondary mb-0"><?php echo $b->nama;?></p>
+                      </td>
+                      <td class="align-middle text-center">
+                        <span class="text-secondary text-xs font-weight-bold"><?php echo $b->ttl;?></span>
+                      </td>
+                      <td class="align-middle text-center">
+                        <span class="text-secondary text-xs font-weight-bold"><?php echo $b->jenis_kelamin;?></span>
+                      </td>
+					  <td class="align-middle text-center">
+                        <span class="text-secondary text-xs font-weight-bold"><?php echo $b->alamat;?></span>
+                      </td>
+                      <td class="align-middle">
+                       <a href="<?php echo base_url('user/user_edit/'.$b->nik);?>" class="btn btn-sm btn-success"><i class="fa fa-wrench"></i> Edit</a>  
+						<a href="<?php echo base_url('user/user_hapus/'.$b->nik); ?>" class="btn btn-sm btn-danger"><i class="fa fa-trash"></i> Hapus</a> 
+                      </td>
+                    </tr>
+					<?php
+						}
+					?>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
